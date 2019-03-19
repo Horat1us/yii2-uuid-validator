@@ -9,7 +9,7 @@ Main purpose of this validator - use it instead of regular expression validator 
 ## Installation
 Using [packagist.org](https://packagist.org/packages/horat1us/yii2-uuid-validator):
 ```bash
-composer require wearesho-team/yii2-uuid-validator:^1.0
+composer require horat1us/yii2-uuid-validator:^1.0
 ```
 
 ## Usage
