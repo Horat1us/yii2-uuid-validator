@@ -15,7 +15,7 @@ class UuidValidatorTest extends TestCase
 {
     public function testDefaultMessage(): void
     {
-        $validator = new UuidValidator;
+        $validator = new UuidValidator();
         $this->assertEquals('{attribute} is invalid.', $validator->message);
     }
 
@@ -31,7 +31,7 @@ class UuidValidatorTest extends TestCase
 
     public function testFailInvalidUuid(): void
     {
-        $validator = new UuidValidator;
+        $validator = new UuidValidator();
         $error = null;
 
         $result = $validator->validate('SomeShit', $error);
@@ -41,7 +41,7 @@ class UuidValidatorTest extends TestCase
 
     public function testSuccessfulValidation(): void
     {
-        $validator = new UuidValidator;
+        $validator = new UuidValidator();
         $error = null;
 
         $result = $validator->validate('26743257-e90f-46af-ad77-9cbcccd9488b', $error);
